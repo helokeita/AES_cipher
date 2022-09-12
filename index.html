@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES変換</title>
+</head>
+<body>
+    <h1>AES変換</h1>
+
+    <form method="post" action="index.php">
+    【必須】暗号化する文字：<input type="text" name="str" value="{value}" /><br>
+    【必須】共通鍵：<input type="text" name="key" value="{key}" /><br>
+    暗号のベクトル値(16bit)：<input type="text" name="iv" value="{iv}" placeholder="0000000000000000"/><br>
+    <select name="select" size="1" >
+        <option value="1">暗号化</option>
+        <option value="2">復号</option>
+    </select>
+    <input type="submit" value="結果を表示する"name="button_submit" />
+    </form>
+
+
+    <h1>{title}</h1>
+    <p>{result}</p>
+</body>
+</html>
